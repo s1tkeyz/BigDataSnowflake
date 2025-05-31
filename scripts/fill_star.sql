@@ -1,4 +1,4 @@
--- 
+-- Заполняем таблицу потребителей
 INSERT INTO d_customer (
     first_name,
     last_name,
@@ -22,7 +22,7 @@ SELECT DISTINCT
     customer_pet_breed
 FROM mock_data;
 
---
+-- Заполняем таблицу продавцов
 INSERT INTO d_seller (
     first_name,
     last_name,
@@ -38,7 +38,7 @@ SELECT DISTINCT
     seller_postal_code
 FROM mock_data;
 
---
+-- Заполняем таблиуц магазинов
 INSERT INTO d_store (
     name,
     location,
@@ -58,7 +58,7 @@ SELECT DISTINCT
     store_email
 FROM mock_data;
 
---
+-- Зполняем таблицу поставщиков
 INSERT INTO d_supplier (
     name,
     contact_person,
@@ -78,7 +78,7 @@ SELECT DISTINCT
     supplier_country
 FROM mock_data;
 
---
+-- Заполняем таблицу дат
 INSERT INTO d_date (
     day,
     month,
