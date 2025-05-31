@@ -1,11 +1,11 @@
 services:
-    db:
-      image: postgres:17
+    postgres:
+      image: postgres:latest
       restart: always
       environment:
-        POSTGRES_USER: s1tkeyz
-        POSTGRES_PASSWORD: 12345678
-        POSTGRES_DB: bigdata_lab_01
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: 12345
+        POSTGRES_DB: bigdata_lab1
       volumes:
         - postgres_data:/var/lib/postgresql/data
 
