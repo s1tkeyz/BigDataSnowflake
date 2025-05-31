@@ -1,0 +1,13 @@
+services:
+    db:
+      image: postgres:17
+      restart: always
+      environment:
+        POSTGRES_USER: s1tkeyz
+        POSTGRES_PASSWORD: 12345678
+        POSTGRES_DB: bigdata_lab_01
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
